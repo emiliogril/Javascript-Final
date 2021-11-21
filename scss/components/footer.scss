@@ -1,0 +1,51 @@
+/* PARTE DE FOOTER */
+  
+.copy {
+
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 20px; }
+
+footer {
+      background-color: #333333;
+      padding: 40px;
+      margin-top: 20px;
+      text-align: center;
+      color: #fff;
+      h5 {
+          margin: 20px 0;
+          font-size: 1.2rem;
+          font-weight: 300;
+      }
+      nav {
+          a {
+              text-decoration: none;
+              color: white;
+              padding: 20px;
+          }
+          a:hover {
+              color: #fff;
+          }
+          svg {
+              width: 30px;
+              transition: all ease 28ms;
+          }
+          svg:hover{
+              transform: scale(1.2,1.2);
+          }
+      }
+  }
+  
+@media only screen and (min-width:200px) and (max-width:900px) {
+      footer {
+          h5 {
+              font-size: 1rem;
+          }
+          nav {
+              svg {
+                  width: 20px;
+              }
+          }
+      }
+  }

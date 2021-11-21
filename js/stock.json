@@ -1,0 +1,8 @@
+[   {"id": 1, "tipo": "jersey", "nombre": "Jersey Adictos a la Bici", "precio": 12500, "imagenes": "productos/adictos.jpeg"},
+    {"id": 2, "tipo": "jersey", "nombre": "Jersey Ballester Cicloturismo", "precio": 6000, "imagenes": "productos/ballester.jpeg"},
+    {"id": 3, "tipo": "jersey", "nombre": "Jersey Felix Cicloturismo", "precio": 7800, "imagenes": "productos/felix.jpeg"},
+    {"id": 4, "tipo": "jersey", "nombre": "Jersey Mountain Bike", "precio": 2300, "imagenes": "productos/mountain.jpeg"},
+    {"id": 5, "tipo": "jersey", "nombre": "Jersey Respeta al Ciclista", "precio": 5600, "imagenes": "productos/respesta.jpeg"},
+    {"id": 6, "tipo": "jersey", "nombre": "Jersey Respeta al Ciclista", "precio": 7000, "imagenes": "productos/respesta1.jpeg"},
+    {"id": 7, "tipo": "jersey", "nombre": "Jersey Team Liebres", "precio": 8000, "imagenes": "productos/teamliebres.jpeg"}
+]

@@ -1,0 +1,73 @@
+.modal-contenedor {
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  visibility: hidden;
+  opacity: 50; }
+  .modal-contenedor .modal-carrito {
+    background-color: #B3B3B3;
+    border: 2px solid #000;
+    position: relative;
+    padding: 20px;
+    min-width: 500px;
+    transition: all .5s;
+    margin-top: -100%;
+    border-radius: 20px; }
+    .modal-contenedor .modal-carrito h3 {
+      color: #BF2222;
+      padding-bottom: 10px; }
+    .modal-contenedor .modal-carrito #carritoCerrar {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 30px;
+      background-color: transparent;
+      border: none; }
+      .modal-contenedor .modal-carrito #carritoCerrar:focus {
+        outline: none; }
+    .modal-contenedor .modal-carrito .precioProducto {
+      padding-top: 10px;
+      margin: 10px;
+      padding: 20px;
+      background-color: #333333;
+      color: aliceblue;
+      border: 2px solid black;
+      border-radius: 20px; }
+    .modal-contenedor .modal-carrito #carrito-contenedor {
+      max-width: 60vw;
+      display: flex;
+      align-content: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap; }
+      .modal-contenedor .modal-carrito #carrito-contenedor .productoEnCarrito {
+        padding: 20px;
+        margin: 20px;
+        border: 2px solid black;
+        background-color: #BF2222;
+        color: white;
+        border-radius: 20px;
+        text-align: center; }
+        .modal-contenedor .modal-carrito #carrito-contenedor .productoEnCarrito .boton-eliminar {
+          width: 20px;
+          background-color: transparent;
+          border: none; }
+
+.modal-active {
+  opacity: 1;
+  visibility: visible; }
+  .modal-active .modal-carrito {
+    margin-top: 0; }
+
+.precioProducto {
+  font-family: Roboto, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #191919;
+  letter-spacing: 2px;
+  text-align: center; }

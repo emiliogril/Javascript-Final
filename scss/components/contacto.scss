@@ -1,0 +1,102 @@
+// PARTE DE CONTACTO
+
+.contacto {
+    background-color: #B3B3B3;
+    scroll-margin-top: 2em;
+
+    .TituloPrincipal {
+        padding-top: 50px;
+        color: #fff;
+    }
+}
+.contacto {
+    
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    
+        .contenedorForm {
+            color: #fff;
+            width: 90%;
+            padding: 30px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            flex-flow: column;
+            background-color: #333333;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            h2 {
+                font-weight: 400;
+                font-size: 1.6rem;
+                margin-bottom: 30px;}
+            .form {
+                display: flex;
+                flex-flow: column;
+                .grupoForm {
+                    display: flex;
+                    flex-flow: column;
+                    justify-content: space-evenly;
+                    padding: 10px;
+                    label {
+                        margin-bottom: 10px;
+                        font-size: 1.1rem;
+                        font-weight: 400;
+                    }
+                    input, textarea {
+                        padding: 5px;
+                        border: 2px solid rgba(#000000, 0.4);
+                        border-radius: 5px;
+                    }
+                    .valido {
+                        border: 2px solid #BF2222;}
+                    .invalido {
+                        border: 2px solid#BF2222;}
+                }
+                .btn-form {
+                    display: block;
+                    border: 2px solid #000;
+                    border-radius: 5px;
+                    background-color: #fff;
+                    width: fit-content;
+                    padding: 12px 24px;
+                    margin: 10px auto;
+                    &:hover {
+                        background-color: #BF2222;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+}
+
+@media only screen and (min-width:780px) and (max-width:1100px) {
+    .contacto {
+        display: flex;
+        justify-content: space-between;
+        .contenedorImg {
+            width: 50%;
+            
+        }
+        .contenedorForm {
+            .form {
+                .grupoForm {
+                    input, textarea {
+                        width: 150px;
+                    }}
+                }
+            }
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:779px) {
+    .contacto {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        .contenedorImg {
+            width: 50%;
+           
+        }
+    }
+}

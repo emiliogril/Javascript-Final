@@ -1,0 +1,81 @@
+/* PARTE DE NAVEGACION */
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+header{
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 5;
+        font-family: 'Bebas Neue';
+        font-size: 20px;
+        animation: 2s;
+        animation-name: aparecer;
+        text-align: center;
+}
+
+.nav-bar {
+        margin: 0px, 100px;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+}
+.nav-link {
+        font-weight: 300;
+        text-decoration: none;
+        color: black;
+}
+.nav.link:hover {
+        color: black;
+}
+.nav-link:link {
+        color: black;
+}
+nav ul li a::after {
+        content: '';
+        width: 0%;
+        background:#BF2222;
+        display: block;
+        margin: auto;
+        height: 2px;
+        transition: .8s;
+}
+nav ul li a::before {
+        content: '';
+        width: 0%;
+        background: #BF2222;
+        display: block;
+         margin: auto;
+        height: 2px;
+        transition: .8s;
+}
+nav ul li a:hover::after {
+        width: 100%;
+        transform-origin: right;
+}
+nav ul li a:hover::before {
+        width: 100%;
+        transform-origin: left;
+}
+.nav-link:visited {
+        color: black;
+}
+nav ul li .active {
+        transform: scale(1.2);
+}
+
+.carrito {
+        background-color:#B3B3B3;
+        color: #BF2222;
+        width: 50px;
+        justify-content: center;
+
+            &:hover{
+                    background-color: #BF2222;
+                    color: #B3B3B3;
+            }}
+

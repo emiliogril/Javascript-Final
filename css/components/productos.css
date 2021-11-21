@@ -1,0 +1,24 @@
+.productos {
+  scroll-margin-top: 7em;
+  padding-bottom: 30px; }
+  .productos h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 300; }
+  .productos #contenedorProductos {
+    padding: 20px 0; }
+    .productos #contenedorProductos .col {
+      text-align: center; }
+      .productos #contenedorProductos .col .btn-comprar {
+        padding: 10px 20px;
+        border: 2px solid #000;
+        border-radius: 5px;
+        background-color: #BF2222;
+        color: white; }
+      .productos #contenedorProductos .col .btn-comprar:hover {
+        background-color: #787878;
+        color: #fff;
+        border: 2px solid #fff; }
+
+.card {
+  background-color: #B3B3B3; }

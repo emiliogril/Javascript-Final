@@ -1,0 +1,16 @@
+{
+  "name": "emiliogril",
+  "version": "1.0.0",
+  "description": "Emi Flash Ropa Indumentaria",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css"
+  },
+  "author": "Emilio Gril <emiliogril@gmail.com",
+  "license": "ISC"
+}
