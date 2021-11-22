@@ -5,21 +5,21 @@ let allProducts = [];
 const cargarProductos = async () => {
     const resp = await fetch('js/stock.json');
     const data = await resp.json();
-  
+
     allProducts = data;
     showProducts(allProducts);
   }
-  
+
   cargarProductos();
-  
-  //Accedo a la seccion productos para crear las cards de cada producto automaticamente
+
+  //Para crear cada producto automaticamente
   const contenedorProductos = document.getElementById('contenedorProductos');
-  
+
   const showProducts = (array) => {
     contenedorProductos.innerHTML = '';
     array.forEach((producto) => {
 
-     //Agrego divs por cada producto que esta en el array  
+//Descripciones de cada producto que esta en el array
     const div = document.createElement('div');
     div.className = "col";
     div.innerHTML = `<div class="card">
@@ -29,14 +29,14 @@ const cargarProductos = async () => {
                             <p class="card-text rojo">Precio: $${producto.precio}</p>
                             <button onclick="agregarAlCarrito(${producto.id})" class="btn-comprar">Agregar al Carrito</button>
                         </div>
-                     </div>`;  
+                     </div>`;
   contenedorProductos.appendChild(div);
   });
   }
-  
+
   showProducts(allProducts);
 
-  //Creo funcion para guardar productos en el local storage
+// Funcion para guardar los productos en el storage
 const storeProducts = (clave, valor) => {
     localStorage.setItem(clave, valor)};
 
@@ -51,11 +51,11 @@ const botonAbrir = document.getElementById('boton-carrito');
 const botonCerrar = document.getElementById('carritoCerrar');
 const modalCarrito = document.getElementsByClassName('modal-carrito')[0];
 
-//Al hacer click en modal se hace visible el modal
+//Sale la pantalla al hacer click en modal se hace visible
 botonAbrir.addEventListener('click', ()=>{
     contenedorModal.classList.toggle('modal-active');
 })
-//Cerrar modal
+//Cerrar la pantalla modal
 botonCerrar.addEventListener('click', ()=>{
     contenedorModal.classList.toggle('modal-active');
 })

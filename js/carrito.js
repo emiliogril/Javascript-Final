@@ -1,4 +1,4 @@
-//Selectores
+
 const contenedorCarrito = document.getElementById('carrito-contenedor');
 const contadorCarrito = document.getElementById('contadorCarrito');
 const precioTotal = document.getElementById('precioTotal');
@@ -6,7 +6,7 @@ const precioTotal = document.getElementById('precioTotal');
 //Array carrito
 let cart = [];
 
-//Agregar productos al carrito
+//Agregar los productos al carrito
 const agregarAlCarrito = (itemId) => {
     const productoEnCarrito = cart.find((prod) => prod.id === itemId);
     if (productoEnCarrito) {
@@ -23,7 +23,7 @@ const agregarAlCarrito = (itemId) => {
     
 
 
-//Creo funcion para visualizar los productos que agrego al carrito, si no hay productos el carrito dice que esta vacio
+//Visualizar los productos que agrego al carrito, si no hay productos el carrito dice que esta vacio
 const actualizarCarrito = () => {
     contenedorCarrito.innerHTML = "";
     
@@ -55,7 +55,7 @@ const actualizarCarrito = () => {
     precioTotal.innerText = cart.reduce((acc, prod) => acc += prod.precio * prod.cantidad, 0);
 }
 
-//Eliminar productos
+//Eliminar los productos
 const eliminarProducto = (itemId) => {
     const producto = cart.find((prod) => prod.id === itemId);
 

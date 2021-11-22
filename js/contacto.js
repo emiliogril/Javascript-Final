@@ -1,16 +1,14 @@
-//Selectores
+
 let nombreUsuario = document.getElementById("nombre");
 let apellidoUsuario = document.getElementById("apellido");
 let emailUsuario = document.getElementById("email");
 let mensajeUsuario = document.getElementById('msj');
 
-//Guardo en consola los datos del usuario ingresado y una vez que
-//se vuelve a cargar la pagina se reinician los datos
+//Guardo en consola los datos del usuario ingresado
 
 const formulario = document.getElementById("formulario");
 
-//Guardo en consola los datos del usuario ingresado y una vez que
-//se vuelve a cargar la pagina se reinician los datos
+// Y una vez que se vuelve a cargar la pagina se reinician los datos
 $("#formulario").submit(function (e) { 
 e.preventDefault();
 console.log(nombreUsuario.value);
@@ -43,7 +41,7 @@ emailUsuario.style.backgroundColor = "#E3E4E5"});
 mensajeUsuario.addEventListener("focusin",() => {
 mensajeUsuario.style.backgroundColor = "#E3E4E5"});
 
-//Agrego colores si el usuario escribe mas de 3 letras
+
 $('#nombre').on('input', () => {
 const val = $('#nombre').val().trim();
 
