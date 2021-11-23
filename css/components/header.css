@@ -68,7 +68,7 @@ nav ul li .active {
 .carrito {
   background-color: #B3B3B3;
   color: #BF2222;
-  width: 50px;
+  width: 100px;
   justify-content: center; }
   .carrito:hover {
     background-color: #BF2222;

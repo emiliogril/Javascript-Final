@@ -117,7 +117,7 @@ nav ul li .active {
 .carrito {
   background-color: #B3B3B3;
   color: #BF2222;
-  width: 50px;
+  width: 100px;
   justify-content: center; }
   .carrito:hover {
     background-color: #BF2222;
@@ -274,6 +274,7 @@ nav ul li .active {
           font-size: 1.1rem;
           font-weight: 400; }
         .contacto .contenedorForm .form .grupoForm input, .contacto .contenedorForm .form .grupoForm textarea {
+          width: 95%;
           padding: 5px;
           border: 2px solid rgba(0, 0, 0, 0.4);
           border-radius: 5px; }
@@ -300,7 +301,7 @@ nav ul li .active {
     .contacto .contenedorImg {
       width: 50%; }
     .contacto .contenedorForm .form .grupoForm input, .contacto .contenedorForm .form .grupoForm textarea {
-      width: 150px; } }
+      width: 100px; } }
 
 @media only screen and (min-width: 200px) and (max-width: 779px) {
   .contacto {

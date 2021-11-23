@@ -37,6 +37,7 @@
           font-size: 1.1rem;
           font-weight: 400; }
         .contacto .contenedorForm .form .grupoForm input, .contacto .contenedorForm .form .grupoForm textarea {
+          width: 95%;
           padding: 5px;
           border: 2px solid rgba(0, 0, 0, 0.4);
           border-radius: 5px; }
@@ -63,7 +64,7 @@
     .contacto .contenedorImg {
       width: 50%; }
     .contacto .contenedorForm .form .grupoForm input, .contacto .contenedorForm .form .grupoForm textarea {
-      width: 150px; } }
+      width: 100px; } }
 
 @media only screen and (min-width: 200px) and (max-width: 779px) {
   .contacto {
