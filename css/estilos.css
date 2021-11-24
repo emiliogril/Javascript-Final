@@ -115,13 +115,12 @@ nav ul li .active {
   transform: scale(1.2); }
 
 .carrito {
-  background-color: #B3B3B3;
+  background-color: #b3b3b300;
   color: #BF2222;
   width: 100px;
   justify-content: center; }
   .carrito:hover {
-    background-color: #BF2222;
-    color: #B3B3B3; }
+    background-color: #BF2222; }
 
 .carousel {
   scroll-margin-top: 7em;
@@ -161,9 +160,25 @@ nav ul li .active {
 .card {
   background-color: #B3B3B3; }
 
+@media only screen and (min-width: 780px) and (max-width: 1100px) {
+  #contenedorProductos {
+    display: flex;
+    justify-content: space-between; }
+    #contenedorProductos .contenedorImg {
+      width: 50%; } }
+
+@media only screen and (min-width: 200px) and (max-width: 779px) {
+  #contenedorProductos {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between; }
+    #contenedorProductos .contenedorImg {
+      width: 50%; } }
+
 .modal-contenedor {
+  scroll-margin-top: 7em;
   z-index: 2;
-  width: 100%;
+  width: 90%;
   height: 100vh;
   position: fixed;
   top: 0;
@@ -177,10 +192,9 @@ nav ul li .active {
     background-color: #B3B3B3;
     border: 2px solid #000;
     position: relative;
-    padding: 20px;
-    min-width: 500px;
+    width: 80%;
     transition: all .5s;
-    margin-top: -100%;
+    margin-top: -80%;
     border-radius: 20px; }
     .modal-contenedor .modal-carrito h3 {
       color: #BF2222;
@@ -203,7 +217,6 @@ nav ul li .active {
       border: 2px solid black;
       border-radius: 20px; }
     .modal-contenedor .modal-carrito #carrito-contenedor {
-      max-width: 60vw;
       display: flex;
       align-content: center;
       justify-content: space-evenly;
@@ -234,6 +247,18 @@ nav ul li .active {
   color: #191919;
   letter-spacing: 2px;
   text-align: center; }
+
+@media only screen and (min-width: 780px) and (max-width: 1100px) {
+  .modal-contenedor {
+    height: 50%;
+    display: flex;
+    justify-content: space-between; } }
+
+@media only screen and (min-width: 200px) and (max-width: 779px) {
+  .modal-contenedor {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between; } }
 
 .contacto {
   background-color: #B3B3B3;

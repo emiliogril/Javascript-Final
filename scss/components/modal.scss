@@ -1,8 +1,9 @@
 // PARTE DE MODAL
 
 .modal-contenedor {
+    scroll-margin-top: 7em;
     z-index: 2;
-    width: 100%;
+    width: 90%;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -16,10 +17,10 @@
         background-color: #B3B3B3;
         border: 2px solid #000;
         position: relative;
-        padding: 20px;
-        min-width: 500px;
+        
+        width: 80%;
         transition: all .5s;
-        margin-top: -100%;
+        margin-top: -80%;
         border-radius: 20px;
         h3 {
             color: #BF2222;
@@ -43,7 +44,7 @@
             border-radius: 20px;
         }
         #carrito-contenedor{
-            max-width: 60vw;
+            
             display: flex;
             align-content: center;
             justify-content: space-evenly;
@@ -77,4 +78,21 @@
     color: #191919;
     letter-spacing: 2px;
     text-align: center;
+}
+
+@media only screen and (min-width:780px) and (max-width:1100px) {
+    .modal-contenedor {
+        height: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width:200px) and (max-width:779px) {
+    .modal-contenedor {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+
+}
 }
