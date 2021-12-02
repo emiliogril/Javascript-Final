@@ -8,11 +8,10 @@
 .contacto {
   display: flex;
   align-items: center;
-  padding: 40px; }
+  padding: 10px; }
   .contacto .contenedorForm {
     color: #fff;
-    width: 90%;
-    padding: 30px;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -38,7 +37,7 @@
           font-weight: 400; }
         .contacto .contenedorForm .form .grupoForm input, .contacto .contenedorForm .form .grupoForm textarea {
           width: 95%;
-          padding: 5px;
+          padding: 1px;
           border: 2px solid rgba(0, 0, 0, 0.4);
           border-radius: 5px; }
         .contacto .contenedorForm .form .grupoForm .valido {
@@ -56,20 +55,3 @@
         .contacto .contenedorForm .form .btn-form:hover {
           background-color: #BF2222;
           color: #fff; }
-
-@media only screen and (min-width: 780px) and (max-width: 1100px) {
-  .contacto {
-    display: flex;
-    justify-content: space-between; }
-    .contacto .contenedorImg {
-      width: 50%; }
-    .contacto .contenedorForm .form .grupoForm input, .contacto .contenedorForm .form .grupoForm textarea {
-      width: 100px; } }
-
-@media only screen and (min-width: 200px) and (max-width: 779px) {
-  .contacto {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between; }
-    .contacto .contenedorImg {
-      width: 50%; } }

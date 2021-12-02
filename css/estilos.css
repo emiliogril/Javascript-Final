@@ -160,28 +160,13 @@ nav ul li .active {
 .card {
   background-color: #B3B3B3; }
 
-@media only screen and (min-width: 780px) and (max-width: 1100px) {
-  #contenedorProductos {
-    display: flex;
-    justify-content: space-between; }
-    #contenedorProductos .contenedorImg {
-      width: 50%; } }
-
-@media only screen and (min-width: 200px) and (max-width: 779px) {
-  #contenedorProductos {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between; }
-    #contenedorProductos .contenedorImg {
-      width: 50%; } }
-
 .modal-contenedor {
   scroll-margin-top: 7em;
   z-index: 2;
   width: 90%;
   height: 100vh;
   position: fixed;
-  top: 0;
+  top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -194,7 +179,6 @@ nav ul li .active {
     position: relative;
     width: 80%;
     transition: all .5s;
-    margin-top: -80%;
     border-radius: 20px; }
     .modal-contenedor .modal-carrito h3 {
       color: #BF2222;
@@ -209,9 +193,7 @@ nav ul li .active {
       .modal-contenedor .modal-carrito #carritoCerrar:focus {
         outline: none; }
     .modal-contenedor .modal-carrito .precioProducto {
-      padding-top: 10px;
       margin: 10px;
-      padding: 20px;
       background-color: #333333;
       color: aliceblue;
       border: 2px solid black;
@@ -248,18 +230,6 @@ nav ul li .active {
   letter-spacing: 2px;
   text-align: center; }
 
-@media only screen and (min-width: 780px) and (max-width: 1100px) {
-  .modal-contenedor {
-    height: 50%;
-    display: flex;
-    justify-content: space-between; } }
-
-@media only screen and (min-width: 200px) and (max-width: 779px) {
-  .modal-contenedor {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between; } }
-
 .contacto {
   background-color: #B3B3B3;
   scroll-margin-top: 2em; }
@@ -270,11 +240,10 @@ nav ul li .active {
 .contacto {
   display: flex;
   align-items: center;
-  padding: 40px; }
+  padding: 10px; }
   .contacto .contenedorForm {
     color: #fff;
-    width: 90%;
-    padding: 30px;
+    width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -300,7 +269,7 @@ nav ul li .active {
           font-weight: 400; }
         .contacto .contenedorForm .form .grupoForm input, .contacto .contenedorForm .form .grupoForm textarea {
           width: 95%;
-          padding: 5px;
+          padding: 1px;
           border: 2px solid rgba(0, 0, 0, 0.4);
           border-radius: 5px; }
         .contacto .contenedorForm .form .grupoForm .valido {
@@ -318,23 +287,6 @@ nav ul li .active {
         .contacto .contenedorForm .form .btn-form:hover {
           background-color: #BF2222;
           color: #fff; }
-
-@media only screen and (min-width: 780px) and (max-width: 1100px) {
-  .contacto {
-    display: flex;
-    justify-content: space-between; }
-    .contacto .contenedorImg {
-      width: 50%; }
-    .contacto .contenedorForm .form .grupoForm input, .contacto .contenedorForm .form .grupoForm textarea {
-      width: 100px; } }
-
-@media only screen and (min-width: 200px) and (max-width: 779px) {
-  .contacto {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between; }
-    .contacto .contenedorImg {
-      width: 50%; } }
 
 /* PARTE DE FOOTER */
 .copy {

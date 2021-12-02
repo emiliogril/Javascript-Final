@@ -4,7 +4,7 @@
   width: 90%;
   height: 100vh;
   position: fixed;
-  top: 0;
+  top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,6 @@
     position: relative;
     width: 80%;
     transition: all .5s;
-    margin-top: -80%;
     border-radius: 20px; }
     .modal-contenedor .modal-carrito h3 {
       color: #BF2222;
@@ -32,9 +31,7 @@
       .modal-contenedor .modal-carrito #carritoCerrar:focus {
         outline: none; }
     .modal-contenedor .modal-carrito .precioProducto {
-      padding-top: 10px;
       margin: 10px;
-      padding: 20px;
       background-color: #333333;
       color: aliceblue;
       border: 2px solid black;
@@ -70,15 +67,3 @@
   color: #191919;
   letter-spacing: 2px;
   text-align: center; }
-
-@media only screen and (min-width: 780px) and (max-width: 1100px) {
-  .modal-contenedor {
-    height: 50%;
-    display: flex;
-    justify-content: space-between; } }
-
-@media only screen and (min-width: 200px) and (max-width: 779px) {
-  .modal-contenedor {
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between; } }
